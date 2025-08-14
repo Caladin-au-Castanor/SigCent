@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiments - SIGCENT</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Use Inter font for a clean, modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Header Section -->
+    <header class="bg-black shadow-md p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <!-- Logo area -->
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="transform transition-transform duration-300 hover:scale-110">
+                    <img src="LOGO.PNG" alt="SIGCENT Logo" class="w-32 h-auto">
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="about.html" class="text-gray-400 text-lg font-semibold uppercase tracking-wider hover:text-yellow-400 transition-colors">About Us</a>
+                <a href="signals.html" class="text-gray-400 text-lg font-semibold uppercase tracking-wider hover:text-yellow-400 transition-colors">Signals</a>
+                <a href="sentiments.html" class="text-gray-400 text-lg font-semibold uppercase tracking-wider hover:text-yellow-400 transition-colors">Sentiments</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto p-6 md:p-8 space-y-12">
+        <section id="sentiments" class="bg-[#0a0a0a] p-6 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 text-white">Sentiments</h2>
+            <p class="text-gray-400 mb-4">This section will be your main dashboard for tracking shares. For now, it's a simple table. You can add more features here later with JavaScript.</p>
+
+            <!-- Australian (AUS) Market Table -->
+            <h3 class="text-2xl font-bold mb-4 text-white">Australian Market (AUS)</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="min-w-full bg-black rounded-lg overflow-hidden">
+                    <thead class="bg-gray-800">
+                        <tr>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Company</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Ticker</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Buy Price</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Current Price</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Current Change (%)</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Target Price</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Horizon (months)</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Value (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-800">
+                        <tr class="hover:bg-gray-800 transition-colors">
+                            <td class="py-3 px-4 text-gray-300">Zip Co Ltd</td>
+                            <td class="py-3 px-4 text-gray-300">ZIP</td>
+                            <td class="py-3 px-4 text-gray-300">$2.66</td>
+                            <td class="py-3 px-4 text-green-400">$3.30</td>
+                            <td class="py-3 px-4 text-green-400">+24.1%</td>
+                            <td class="py-3 px-4 text-gray-300">$4.50</td>
+                            <td class="py-3 px-4 text-gray-300">6</td>
+                            <td class="py-3 px-4 text-gray-300">+36.4%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-800 transition-colors">
+                            <td class="py-3 px-4 text-gray-300">Iluka Resources Ltd</td>
+                            <td class="py-3 px-4 text-gray-300">ILU</td>
+                            <td class="py-3 px-4 text-gray-300">$3.50</td>
+                            <td class="py-3 px-4 text-green-400">$6.34</td>
+                            <td class="py-3 px-4 text-green-400">+81.1%</td>
+                            <td class="py-3 px-4 text-gray-300">$12.10</td>
+                            <td class="py-3 px-4 text-gray-300">18</td>
+                            <td class="py-3 px-4 text-gray-300">+90.8%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-800 transition-colors">
+                            <td class="py-3 px-4 text-gray-300">AVH Ltd</td>
+                            <td class="py-3 px-4 text-gray-300">AVH</td>
+                            <td class="py-3 px-4 text-gray-300">$1.79</td>
+                            <td class="py-3 px-4 text-red-400">$1.73</td>
+                            <td class="py-3 px-4 text-red-400">-3.4%</td>
+                            <td class="py-3 px-4 text-gray-300">$3.80</td>
+                            <td class="py-3 px-4 text-gray-300">16</td>
+                            <td class="py-3 px-4 text-gray-300">+112.3%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- American (USA) Market Table -->
+            <h3 class="text-2xl font-bold mb-4 text-white">American Market (USA)</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-black rounded-lg overflow-hidden">
+                    <thead class="bg-gray-800">
+                        <tr>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Company</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Ticker</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Buy Price</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Current Price</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Current Change (%)</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Target Price</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Horizon (months)</th>
+                            <th class="py-3 px-4 text-left font-semibold text-gray-300">Value (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-800">
+                        <tr class="hover:bg-gray-800 transition-colors">
+                            <td class="py-3 px-4 text-gray-300">Advance Auto Parts Inc</td>
+                            <td class="py-3 px-4 text-gray-300">AAP</td>
+                            <td class="py-3 px-4 text-gray-300">$53.44</td>
+                            <td class="py-3 px-4 text-green-400">$61.81</td>
+                            <td class="py-3 px-4 text-green-400">+15.7%</td>
+                            <td class="py-3 px-4 text-gray-300">$97.40</td>
+                            <td class="py-3 px-4 text-gray-300">8</td>
+                            <td class="py-3 px-4 text-gray-300">+57.6%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-800 transition-colors">
+                            <td class="py-3 px-4 text-gray-300">Sezzle Inc</td>
+                            <td class="py-3 px-4 text-gray-300">SEZL</td>
+                            <td class="py-3 px-4 text-gray-300">$91.50</td>
+                            <td class="py-3 px-4 text-green-400">$91.91</td>
+                            <td class="py-3 px-4 text-green-400">+0.4%</td>
+                            <td class="py-3 px-4 text-gray-300">$186.00</td>
+                            <td class="py-3 px-4 text-gray-300">12</td>
+                            <td class="py-3 px-4 text-gray-300">+102.4%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-800 transition-colors">
+                            <td class="py-3 px-4 text-gray-300">Alphabet Inc</td>
+                            <td class="py-3 px-4 text-gray-300">GOOG</td>
+                            <td class="py-3 px-4 text-gray-300">$175.10</td>
+                            <td class="py-3 px-4 text-green-400">$202.70</td>
+                            <td class="py-3 px-4 text-green-400">+15.8%</td>
+                            <td class="py-3 px-4 text-gray-300">$246.00</td>
+                            <td class="py-3 px-4 text-gray-300">6</td>
+                            <td class="py-3 px-4 text-gray-300">+21.4%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-8 text-gray-500 text-sm text-center">
+                <p>Note: Share prices are for demonstration purposes only.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-black p-6 text-center text-gray-400 mt-auto">
+        <p>&copy; 2025 SIGCENT. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

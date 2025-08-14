@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGCENT - Signal & Sentiment</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Use Inter font for a clean, modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="homepage-bg">
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto relative z-10 flex flex-col items-center justify-center">
+        <!-- Logo and links are now part of a flexbox container -->
+        <div class="flex flex-col items-center justify-center space-y-8 mb-16">
+            <img src="LOGO.2.PNG" alt="SIGCENT Logo" class="w-[28rem] h-auto">
+        </div>
+
+        <!-- The "White Box" with Navigation Links, now wider and rounded -->
+        <div class="bg-white p-12 rounded-full shadow-lg w-full max-w-3xl mx-auto flex flex-col items-center text-center">
+            <nav class="flex flex-row space-x-8">
+                <a href="about.html" class="w-48 h-16 flex items-center justify-center rounded-full text-black text-xl font-semibold uppercase tracking-wider bg-gray-200 hover:bg-yellow-400 hover:text-gray-800 transition-colors duration-300">About Us</a>
+                <a href="signals.html" class="w-48 h-16 flex items-center justify-center rounded-full text-black text-xl font-semibold uppercase tracking-wider bg-gray-200 hover:bg-yellow-400 hover:text-gray-800 transition-colors duration-300">Signals</a>
+                <a href="sentiments.html" class="w-48 h-16 flex items-center justify-center rounded-full text-black text-xl font-semibold uppercase tracking-wider bg-gray-200 hover:bg-yellow-400 hover:text-gray-800 transition-colors duration-300">Sentiments</a>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-black p-6 text-center text-gray-400 absolute bottom-0 w-full">
+        <p>&copy; 2025 SIGCENT. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

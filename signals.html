@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signals - SIGCENT</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Use Inter font for a clean, modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Header Section -->
+    <header class="bg-black shadow-md p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <!-- Logo area -->
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="transform transition-transform duration-300 hover:scale-110">
+                    <img src="LOGO.PNG" alt="SIGCENT Logo" class="w-32 h-auto">
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="about.html" class="text-gray-400 text-lg font-semibold uppercase tracking-wider hover:text-yellow-400 transition-colors">About Us</a>
+                <a href="signals.html" class="text-gray-400 text-lg font-semibold uppercase tracking-wider hover:text-yellow-400 transition-colors">Signals</a>
+                <a href="sentiments.html" class="text-gray-400 text-lg font-semibold uppercase tracking-wider hover:text-yellow-400 transition-colors">Sentiments</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto p-6 md:p-8 space-y-12">
+        <section id="signals" class="bg-[#0a0a0a] p-6 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 text-white">Signals</h2>
+            <p class="text-gray-400 mb-6">This is where you can feature your latest insights and research. Below are some example article cards.</p>
+
+            <!-- Grid for Articles -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Article Card 1 -->
+                <div class="bg-black rounded-xl p-4 shadow-md hover:bg-[#1a1a1a] transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-white">The Future of AI in Finance</h3>
+                    <p class="text-gray-400 text-sm mb-4">An in-depth look at how artificial intelligence is changing the way we invest and analyze markets.</p>
+                    <a href="#" class="text-yellow-400 hover:underline">Read more &rarr;</a>
+                </div>
+
+                <!-- Article Card 2 -->
+                <div class="bg-black rounded-xl p-4 shadow-md hover:bg-[#1a1a1a] transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Understanding Market Volatility</h3>
+                    <p class="text-gray-400 text-sm mb-4">A breakdown of the key factors that cause market swings and how to navigate them.</p>
+                    <a href="#" class="text-yellow-400 hover:underline">Read more &rarr;</a>
+                </div>
+
+                <!-- Article Card 3 -->
+                <div class="bg-black rounded-xl p-4 shadow-md hover:bg-[#1a1a1a] transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Beginner's Guide to Stock Analysis</h3>
+                    <p class="text-gray-400 text-sm mb-4">A step-by-step guide on how to perform fundamental and technical analysis on stocks.</p>
+                    <a href="#" class="text-yellow-400 hover:underline">Read more &rarr;</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-black p-6 text-center text-gray-400 mt-auto">
+        <p>&copy; 2025 SIGCENT. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
